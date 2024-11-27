@@ -35,30 +35,30 @@
 
             <!-- Columna 2 -->
             <div>
-                <h6 class="uppercase font-bold mb-4">Products</h6>
+                <h6 class="uppercase font-bold mb-4">Servicios</h6>
                 <ul>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Angular</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">React</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Vue</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Laravel</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Sitios web</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Consultoria técnica</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Apps móviles</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Seguridad</a></li>
                 </ul>
             </div>
 
             <!-- Columna 3 -->
             <div>
-                <h6 class="uppercase font-bold mb-4">Useful Links</h6>
+                <h6 class="uppercase font-bold mb-4">Developers</h6>
                 <ul>
-                    <li><a href="#" class="text-gray-300  hover:text-white">Pricing</a></li>
-                    <li><a href="#" class="text-gray-300  hover:text-white">Settings</a></li>
-                    <li><a href="#" class="text-gray-300  hover:text-white">Orders</a></li>
-                    <li><a href="#" class="text-gray-300  hover:text-white">Help</a></li>
+                    <li><a href="#" class="text-gray-300  hover:text-white">Eduardo</a></li>
+                    <li><a href="#" class="text-gray-300  hover:text-white">Cesar</a></li>
+                    <li><a href="#" class="text-gray-300  hover:text-white">Geovani</a></li>
+                    <li><a href="#" class="text-gray-300  hover:text-white"></a></li>
                 </ul>
             </div>
 
             <!-- Columna 4 -->
             <div>
-                <h6 class="uppercase font-bold mb-4">Contact</h6>
-                <p class="text-gray-300 hover:text-white"><i class="fas fa-home text-gray-500 mr-2"></i> New York, NY 10012, US</p>
+                <h6 class="uppercase font-bold mb-4">Contacto</h6>
+                <p class="text-gray-300 hover:text-white"><i class="fas fa-home text-gray-500 mr-2"></i>Guadalajara, #, México</p>
                 <p class="text-gray-300 hover:text-white"><i class="fas fa-envelope text-gray-500 mr-2"></i> info@example.com</p>
                 <p class="text-gray-300 hover:text-white"><i class="fas fa-phone text-gray-500 mr-2"></i> + 01 234 567 88</p>
                 <p class="text-gray-300 hover:text-white"><i class="fas fa-print text-gray-500 mr-2"></i> + 01 234 567 89</p>
@@ -69,6 +69,6 @@
     <!-- Copyright -->
     <div style="background: rgba(28, 36, 50, 0.8); border-radius:10px" class="text-center p-4">
         © 2024 Copyright:
-        <a class="font-bold text-gray-300 hover:text-white" href="#">TailwindCSS.com</a>
+        <a class="font-bold text-gray-300 hover:text-white" >Empresa.com</a>
     </div>
 </footer>

@@ -80,13 +80,25 @@
             </a>
           </div>
         <div class="topic-card flex flex-1 justify-center text-center md:max-w-[225px]" data-category="framework">
-          <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px; min-width: 192px; background: #1c2432"">
+          <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px; min-width: 192px; background: #1c2432">
             <div class="flex flex-1 items-center">
               <div class="mr-4 flex flex-shrink-0 justify-center">
                 <img width="40" height="40" src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" alt="authentication-logo.svg topic icon" class="h-full" loading="lazy">
               </div>
               <div class="w-full lg:w-auto flex justify-between md:block">
                 <h2 class="text-left text-base font-semibold leading-tight">React</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="topic-card flex flex-1 justify-center text-center md:max-w-[225px]" data-category="framework">
+          <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px; min-width: 192px; background: #1c2432">
+            <div class="flex flex-1 items-center">
+              <div class="mr-4 flex flex-shrink-0 justify-center">
+                <img width="50" height="50" src="https://laracasts.com/images/topics/icons/blade-logo.svg?v=4" alt="icono de tema blade-logo.svg" class="h-full" loading="lazy">
+              </div>
+              <div class="w-full lg:w-auto flex justify-between md:block">
+                <h2 class="text-left text-base font-semibold leading-tight">Blade</h2>
               </div>
             </div>
           </a>
