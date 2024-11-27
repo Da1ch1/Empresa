@@ -65,7 +65,7 @@
         <!-- Contenedor principal (logo y menú) -->
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
           <div class="flex shrink-0 items-center">
-            <img class="h-14 w-auto" src="{{asset('img/ajolot3.png')}}" alt="Your Company">
+            <img class="h-10 w-auto" src="{{asset('img/ajolot3.png')}}" alt="Your Company">
           </div>
     
                 <!-- Menú central (visibles solo en pantallas grandes) -->
