@@ -1,28 +1,5 @@
-<style>
-.scrolling-container {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer */
-}
-
-.scrolling-container::-webkit-scrollbar {
-  display: none; /* Safari y Chrome */
-}
-
-.topic-card {
-  transition: opacity 0.3s ease;
-}
-
-.topic-card.hidden {
-  display: none;
-}
-.filter-item.active {
-  font-weight: bold;
-  color: #f9f9f9; /* Cambia el color según tu diseño */
-  
-}
-</style>
 <nav class="container mt-20 mb-7 overflow-hidden px-[30px] xl:px-0" aria-label="Topics Menu">
-  <ul class="flex min-h-[40px] items-center gap-x-4 overflow-x-auto overflow-y-hidden from-transparent via-[rgba(50,138,241,0.15)] to-transparent pr-[20px] text-center leading-loose after:absolute after:bottom-[-20px] after:hidden after:h-px after:w-full after:flex-shrink-0 after:bg-gradient-to-r md:mx-auto md:min-h-0 md:justify-center md:gap-x-8 md:overflow-x-visible md:overflow-y-visible md:pr-0 after:md:block lg:gap-x-12" style="max-width: 800px;">
+    <ul class="observed flex min-h-[40px] items-center gap-x-4 overflow-x-auto overflow-y-hidden from-transparent via-[rgba(50,138,241,0.15)] to-transparent pr-[20px] text-center leading-loose after:absolute after:bottom-[-20px] after:hidden after:h-px after:w-full after:flex-shrink-0 after:bg-gradient-to-r md:mx-auto md:min-h-0 md:justify-center md:gap-x-8 md:overflow-x-visible md:overflow-y-visible md:pr-0 after:md:block lg:gap-x-12" style="max-width: 800px;">
     <li class="relative filter-item active cursor-pointer inline-block flex-shrink-0" data-category="all">
       <a class="taxonomy-nav-link rounded-full px-4 py-2 text-base font-medium hover:text-white md:px-0 md:py-0 md:text-lg md:bg-transparent text-card-300">Todo </a>
     </li>
@@ -52,14 +29,14 @@
 <div class="container ">
   <div class=" sm:py-22">
     <div class="scrolling-container-section mx-auto max-w-7xl px-6 lg:px-8">
-      <h3 class="inherits-color relative  text-center text-3xl font-semibold leading-tighter tracking-tight md:text-6xl">Conoce nuestro entorno de desarrollo.</h3>
-      <h2 class="text-center mt-5 " style="color: rgb(186 217 252); font-weight: 600; font-size: 1.125rem;">¡Puedes estar seguro que somos los indicados para dar solución a tus problemas!</h2>
-      <div class="mx-auto mb-3 mt-8 grid grid-flow-col justify-start gap-x-3 gap-y-4  overflow-auto md:mt-10 scrolling-container hide-scrollbar" style="grid-template-rows: repeat(3, 1fr);grid-auto-columns: 225px;">    
-            <div class="topic-card flex flex-1 justify-center text-center md:max-w-[225px]" data-category="framework">
+      <h3 class="observed inherits-color relative  text-center text-3xl font-semibold leading-tighter tracking-tight md:text-6xl">Conoce nuestro entorno de desarrollo.</h3>
+      <h2 class="observed text-center mt-5 " style="color: rgb(186 217 252); font-weight: 600; font-size: 1.125rem;">¡Puedes estar seguro que somos los indicados para dar solución a tus problemas!</h2>
+      <div class="observed mx-auto  mb-3 mt-8 grid grid-flow-col justify-start gap-x-3 gap-y-4  overflow-auto md:mt-10 scrolling-container hide-scrollbar" style="grid-template-rows: repeat(3, 1fr);grid-auto-columns: 225px;">    
+            <div class="topic-card  flex flex-1 justify-center text-center md:max-w-[225px]" data-category="framework">
               <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px;min-width: 192px; background: #1c2432">
               <div class="flex flex-1 items-center">
                 <div class="mr-4 flex flex-shrink-0 justify-center">
-                  <img width="40" height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/50px-Laravel.svg.png?20190820171151" alt="alpine-logo.svg topic icon" class="h-full" loading="lazy">
+                  <img width="40" height="40" src="https://laracasts.com/images/topics/icons/laravel-logo.svg?v=4" alt="alpine-logo.svg topic icon" class="h-full" loading="lazy">
                 </div>
                 <div class="w-full lg:w-auto flex justify-between md:block">
                   <h2 class="text-left text-base font-semibold leading-tight">Laravel</h2>
@@ -103,6 +80,18 @@
             </div>
           </a>
         </div>
+        <div class="topic-card flex flex-1 justify-center text-center md:max-w-[225px]" data-category="framework">
+          <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px; min-width: 192px; background: #1c2432">
+            <div class="flex flex-1 items-center">
+              <div class="mr-4 flex flex-shrink-0 justify-center">
+                <img width="50" height="50" src="https://laracasts.com/images/topics/icons/livewire-logo.svg?v=4" alt="livewire-logo.svg topic icon" class="h-full" loading="lazy">
+              </div>
+              <div class="w-full lg:w-auto flex justify-between md:block">
+                <h2 class="text-left text-base font-semibold leading-tight">Laravel Livewire</h2>
+              </div>
+            </div>
+          </a>
+        </div>
         <div class="topic-card flex flex-1 justify-center text-center md:max-w-[225px]" data-category="Lenguages">
           <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px; min-width: 192px; background: #1c2432">
             <div class="flex flex-1 items-center">
@@ -123,6 +112,18 @@
               </div>
               <div class="w-full lg:w-auto flex justify-between md:block">
                 <h2 class="text-left text-base font-semibold leading-tight">Python</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="topic-card flex flex-1 justify-center text-center md:max-w-[225px]" data-category="Lenguages">
+          <a class="panel relative transition-colors duration-300 hoverable flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1"  style="height: 84px; min-width: 192px;background: #1c2432">
+            <div class="flex flex-1 items-center">
+              <div class="mr-4 flex flex-shrink-0 justify-center">
+                <img width="50" height="50" src="https://laracasts.com/images/topics/icons/sql-logo.svg?v=4" alt="sql-logo.svg topic icon" class="h-full" loading="lazy">
+              </div>
+              <div class="w-full lg:w-auto flex justify-between md:block">
+                <h2 class="text-left text-base font-semibold leading-tight">SQL</h2>
               </div>
             </div>
           </a>

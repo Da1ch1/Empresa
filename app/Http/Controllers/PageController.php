@@ -17,4 +17,20 @@ class PageController extends Controller
         return view('dashboard.combined');
     }
     
+    public function servicios()
+    {
+        return view('servicios.inicial');
+    }
+
+    public function proyectos()
+    {
+        return view('proyectos.index');
+    }
+
+
+
+    public function nosotros()
+    {
+        return view('nosotros.index');
+    }
 }

@@ -1,4 +1,4 @@
-<footer style="background: rgb(28 36 50); border-radius:10px; background-image: url({{asset('img/footer.png')}}); background-size: contain; background-repeat: no-repeat; background-position: left center; background-blend-mode: overlay;" class="text-center text-gray-600">    <!-- Redes sociales -->
+<footer style="background: rgb(28 36 50); border-radius:10px; background-image: url({{asset('img/pieweb.webp')}}); background-size: contain; background-repeat: no-repeat; background-position: left center; background-blend-mode: overlay;" class="text-center text-gray-600">    <!-- Redes sociales -->
     <div class=" p-3 flex flex-col lg:flex-row items-center justify-between" style="background: rgb(28 36 50); border-radius: 10px">
         <div class="hidden lg:block">
             <span class="text-gray-300 hover:text-white">Redes Sociales:</span>
@@ -7,8 +7,8 @@
             <a href="#" class="text-gray-600 hover:text-gray-800 text-xl">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="text-gray-600 hover:text-gray-800 text-xl">
-                <i class="fab fa-x"></i>
+            <a href="https://www.instagram.com/axoltcode/" class="text-gray-600 hover:text-gray-800 text-xl">
+                <i class="fab fa-instagram"></i>
             </a>
             <a href="#" class="text-gray-600 hover:text-gray-800 text-xl">
                 <i class="fab fa-linkedin"></i>
@@ -24,9 +24,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Columna 1 -->
             <div>
-                <h6 class="uppercase font-bold mb-4 flex items-center justify-center md:justify-start">
-                    <i class="fas fa-gem text-gray-500 mr-2"></i>
-                    Empresa
+                <h6 class="uppercase font-bold  flex items-center justify-center md:justify-start">
+                  <a href="{{route('inicio')}}">  <img class="logo-pie" src="{{ asset('img/logo.webp') }}" alt=""></a>
                 </h6>
                 <p class="text-gray-300 hover:text-white">
                     Nueve de cada diez médicos recomiendan nuestros servicios sobre marcas competidoras. Entra, compruébalo por ti mismo y aumenta enormemente tus clientes.
@@ -40,7 +39,6 @@
                     <li><a href="#" class="text-gray-300 hover:text-white">Sitios web</a></li>
                     <li><a href="#" class="text-gray-300 hover:text-white">Consultoria técnica</a></li>
                     <li><a href="#" class="text-gray-300 hover:text-white">Apps móviles</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Seguridad</a></li>
                 </ul>
             </div>
 
@@ -48,10 +46,9 @@
             <div>
                 <h6 class="uppercase font-bold mb-4">Developers</h6>
                 <ul>
-                    <li><a href="#" class="text-gray-300  hover:text-white">Eduardo</a></li>
                     <li><a href="#" class="text-gray-300  hover:text-white">Cesar</a></li>
+                    <li><a href="#" class="text-gray-300  hover:text-white">Lalo</a></li>
                     <li><a href="#" class="text-gray-300  hover:text-white">Geovani</a></li>
-                    <li><a href="#" class="text-gray-300  hover:text-white"></a></li>
                 </ul>
             </div>
 
@@ -69,6 +66,6 @@
     <!-- Copyright -->
     <div style="background: rgba(28, 36, 50, 0.8); border-radius:10px" class="text-center p-4">
         © 2024 Copyright:
-        <a class="font-bold text-gray-300 hover:text-white" >Empresa.com</a>
+        <a class="font-bold text-gray-300 hover:text-white" >Axoltcode.com</a>
     </div>
 </footer>

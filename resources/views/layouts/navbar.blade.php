@@ -1,46 +1,5 @@
 <!-- Incluir Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-    .menu-link {
-      position: relative; /* Necesario para colocar el ::after */
-      text-decoration: none; /* Elimina subrayado predeterminado */
-      color: #bad9fc80; /* Gris (Tailwind text-gray-300) */
-      font-size: 1rem; /* Text-m */
-      font-weight: 500; /* Medium */
-      padding: 0.5rem 0.75rem; /* px-3 py-2 */
-      transition: color 0.3s; /* Transición para el color */
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  
-    .menu-link:hover {
-      color: #ffffff; /* Cambia a blanco al hacer hover */
-    }
-  
-    .menu-link::after {
-      content: ""; /* Pseudo-elemento vacío */
-      position: absolute; /* Relativo al enlace */
-      left: 0;
-      bottom: 0; /* Línea en la parte inferior */
-      width: 0%; /* Por defecto, no visible */
-      height: 3px; /* Grosor de la línea */
-      background-color: #3b82f6; /* Azul (Tailwind blue-500) */
-      transition: width 0.3s ease-in-out; /* Animación para extender la línea */
-    }
-  
-    .menu-link:hover::after {
-      width: 100%; /* La línea se extiende completamente */
-    }
-
-    .hamburger-nav span {
-  transition: all 0.25s ease-in-out;
-  border-radius: 9px;  
-  
-  height: 3px;
-}
-
-  </style>
-  
 <nav>
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between" style="background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 2px, transparent 2px, transparent 9px); position: relative; height: 14px;">
@@ -63,37 +22,36 @@
 </div>
     
         <!-- Contenedor principal (logo y menú) -->
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
-          <div class="flex shrink-0 items-center">
-            <img class="h-10 w-auto" src="{{asset('img/ajolot3.png')}}" alt="Your Company">
+        <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-between">
+          <!-- Logo -->
+          <div class="flex-shrink-0 items-center mx-auto">
+           <a href="{{ route ('inicio')}}"> <img class="logo-color" src="{{ asset('img/logo.webp') }}" alt="AxolCode"></a>
           </div>
-    
-                <!-- Menú central (visibles solo en pantallas grandes) -->
-                <div class="hidden sm:block flex-1">
-                    <div class="flex justify-center space-x-4" >
-                    <a href="#" class="menu-link">Servicios</a>
-                    <a href="#" class="menu-link">Proyectos</a>
-                    <a href="#" class="menu-link">Seguridad</a>
-                    <a href="#" class="menu-link">Nosotros</a>
-                    </div>
-                </div>
+        
+          <!-- Menú central -->
+          <div class="hidden sm:flex flex-1 justify-center space-x-4 mt-4 sm:mt-0">
+            <a href="{{ route('inicial') }}" class="menu-link">Servicios</a>
+            <a href="{{ route('projects')}}" class="menu-link">Proyectos</a>
+            <a href="{{ route('us')}}" class="menu-link">Nosotros</a>
+          </div>
         </div>
+        
     
         <!-- Perfil -->
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
           <div class="relative ml-3">
             <div>
-              <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true" onclick="toggleperfil()">
+              <button type="button" class="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true" onclick="toggleperfil()">
                 <span class="absolute -inset-1.5"></span>
-                <img class="size-8 rounded-full" src="{{asset('img/robot perfil.png')}}" alt="">
+                <img class="size-8 rounded-full" src="{{asset('img/pie.png')}}" alt="">
               </button>
             </div>
     
             <!-- Dropdown -->
             <div id="user-menu" style="background: rgb(28 36 50 )" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md py-1 shadow-lg ring-1 ring-black/5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-              <a href="#" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-              <a href="#" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-              <a href="#" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+              <a href="#" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-0">Tu perfil</a>
+              <a href="#" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-1">Ajustes</a>
+              <a href="#" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-2">Salir</a>
             </div>
           </div>
         </div>
@@ -114,25 +72,26 @@
 <!-- Menú -->
     <ul class="my-auto flex flex-col justify-around gap-y-5 overflow-auto text-center" style="font-family: 'Hanken Grotesk', sans-serif;">
       <li>
-        <a class="font-medium text-3xl active:text-blue-400 text-white" href="/browse">
-          Servicios
-          <span class="-mt-1 block text-xs italic text-gray-400">// just browsing?</span>
+        <a class="font-medium text-3xl active:text-blue-400 text-white" href="{{route('inicio')}}">
+          Inicio
+          <span class="-mt-1 block text-xs italic text-gray-400">// just start?</span>
         </a>
       </li>
       <li>
-        <a class="font-medium text-3xl active:text-blue-400 text-white" href="/series">
+        <a class="font-medium text-3xl active:text-blue-400 text-white" href="{{route('inicial')}}">
+          Servicios
+          <span class="-mt-1 block text-xs italic text-gray-400">// just services?</span>
+        </a>
+      </li>
+      <li>
+        <a class="font-medium text-3xl active:text-blue-400 text-white" href="{{route('projects')}}">
           Proyectos
           <span class="-mt-1 block text-xs italic text-gray-400">// it's what you're here for</span>
         </a>
       </li>
+
       <li>
-        <a class="font-medium text-3xl active:text-blue-400 text-white" href="/path">
-          Seguridad
-          <span class="-mt-1 block text-xs italic text-gray-400">// walk the path</span>
-        </a>
-      </li>
-      <li>
-        <a class="font-medium text-3xl active:text-blue-400 text-white" href="/bits">
+        <a class="font-medium text-3xl active:text-blue-400 text-white" href="{{route('us')}}">
           Nosotros
           <span class="-mt-1 block text-xs italic text-gray-400">// got five minutes?</span>
         </a>

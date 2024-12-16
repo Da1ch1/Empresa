@@ -2,13 +2,10 @@
     <div class="relative isolate lg:px-8">
       <div class="mx-auto max-w-2xl  sm:py-48 lg:py-16">
         <div class="text-center sm:mb-8 sm:flex sm:justify-center">
-          <div class=" relative rounded-full px-3 py-1 text-sm/6  ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Seguridad que protege tu futuro.
-          </div>
         </div>
         <div class="text-center">
-          <h1 class="text-balance text-5xl font-semibold tracking-tight  sm:text-7xl">Protección cibernética a tu medida</h1>
-          <p class="mt-8 text-pretty text-lg font-medium  sm:text-xl/8">Cuida tus datos y operaciones con nuestras soluciones avanzadas.</p>
+          <h1 class="observed text-balance text-5xl font-semibold tracking-tight  sm:text-7xl">Lleva tu empresa al siguiente nivel</h1>
+          <p class="observed mt-8 text-pretty text-lg font-medium  sm:text-xl/8">Transformamos tus ideas en soluciones digitales.</p>
         </div>
       </div>
       <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
