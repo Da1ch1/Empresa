@@ -9,4 +9,5 @@
     @include('dashboard.section')
 
     @include('dashboard.grid')
+    @include('dashboard.testimonios')
 @endsection
